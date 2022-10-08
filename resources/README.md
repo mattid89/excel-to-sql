@@ -1,0 +1,1 @@
+Carpeta donde posicionar los archivos de excel de input y donde se van a generar los archivos de output.
