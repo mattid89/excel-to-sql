@@ -13,6 +13,9 @@ const execute = () => {
       const stream = createWriteStream('./resources/paradas.sql');
       stream.write('INSERT INTO Parada (CodigoParada, Latitud, Longitud, Descripcion, IdTipoCoordenada) VALUES ');
       sheetArray.forEach((row, index) => {
+            if (!row.valido)
+                  return;
+
             stream.write(`('${row.codigo}', ${row.latitud}, ${row.longitud}, '${row.descripcion}', ${row.tipo})`);
             if (index < sheetArray.length - 1) {
                   stream.write(',');
