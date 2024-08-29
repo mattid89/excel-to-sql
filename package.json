@@ -1,6 +1,6 @@
 {
   "name": "paradas",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "generar script de sql a partir de un excel",
   "main": "excel_to_script.js",
